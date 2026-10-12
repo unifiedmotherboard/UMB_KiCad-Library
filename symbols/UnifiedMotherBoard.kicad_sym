@@ -4,12 +4,12 @@
 	(generator_version "10.0")
 	(symbol "UMB_Key-E"
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J1"
-			(at 0 2.54 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -19,7 +19,7 @@
 			)
 		)
 		(property "Value" "Unified MotherBoard"
-			(at 0 0 0)
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -28,8 +28,8 @@
 				)
 			)
 		)
-		(property "Footprint" "UnifiedMotherBoard_KiCad-Library:UMB_M.2_2222_Key-E"
-			(at 0 0 0)
+		(property "Footprint" "UnifiedMotherBoard:UMB_M.2_2222_Key-E"
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -63,8 +63,8 @@
 		)
 		(symbol "UMB_Key-E_0_1"
 			(rectangle
-				(start -20.32 35.56)
-				(end 20.32 -35.56)
+				(start -20.32 40.64)
+				(end 20.32 -38.1)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -76,7 +76,7 @@
 		)
 		(symbol "UMB_Key-E_1_0"
 			(pin bidirectional line
-				(at -22.86 -30.48 0)
+				(at -22.86 -33.02 0)
 				(length 2.54)
 				(name "D22/A6"
 					(effects
@@ -94,7 +94,7 @@
 				)
 			)
 			(pin output line
-				(at 22.86 -2.54 180)
+				(at 22.86 -5.08 180)
 				(length 2.54)
 				(name "D12/SPI_MISO1"
 					(effects
@@ -112,7 +112,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -10.16 180)
+				(at 22.86 -12.7 180)
 				(length 2.54)
 				(name "D15/SPI_~{CS}1"
 					(effects
@@ -130,7 +130,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "MP"
@@ -151,7 +151,7 @@
 		)
 		(symbol "UMB_Key-E_1_1"
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -169,7 +169,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -187,8 +187,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 38.1 270)
+			(pin power_out line
+				(at -5.08 43.18 270)
 				(length 2.54)
 				(name "VBUS_IN"
 					(effects
@@ -206,7 +206,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 38.1 270)
+				(at 0 43.18 270)
 				(length 2.54)
 				(name "VSYS_OUT"
 					(effects
@@ -223,8 +223,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 38.1 270)
+			(pin power_out line
+				(at -5.08 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -243,7 +243,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 38.1 270)
+				(at 0 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VSYS_OUT"
@@ -261,8 +261,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 38.1 270)
+			(pin power_out line
+				(at -5.08 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -281,7 +281,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 38.1 270)
+				(at 0 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VSYS_OUT"
@@ -300,7 +300,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -319,7 +319,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -337,8 +337,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 38.1 270)
+			(pin power_out line
+				(at -5.08 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -357,10 +357,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 38.1 270)
+				(at 5.08 43.18 270)
 				(length 2.54)
-				(hide yes)
-				(name "VSYS_OUT"
+				(name "VDD_OUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -375,8 +374,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 38.1 270)
+			(pin power_out line
+				(at -5.08 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -394,11 +393,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 38.1 270)
+			(pin input line
+				(at -22.86 17.78 0)
 				(length 2.54)
-				(hide yes)
-				(name "VSYS_OUT"
+				(name "SHP_HLD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -413,8 +411,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 38.1 270)
+			(pin power_out line
+				(at -5.08 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -433,10 +431,10 @@
 				)
 			)
 			(pin power_in line
-				(at 0 38.1 270)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
-				(name "VSYS_OUT"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -452,7 +450,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -470,11 +468,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -38.1 90)
+			(pin input line
+				(at -22.86 -2.54 0)
 				(length 2.54)
-				(hide yes)
-				(name "GND"
+				(name "LED0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -490,9 +487,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 22.86 180)
+				(at -22.86 30.48 0)
 				(length 2.54)
-				(name "CC2"
+				(name "CC1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -507,10 +504,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 5.08 38.1 270)
+			(pin input line
+				(at -22.86 -5.08 0)
 				(length 2.54)
-				(name "VDD_OUT"
+				(name "LED1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -526,9 +523,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 25.4 180)
+				(at -22.86 27.94 0)
 				(length 2.54)
-				(name "CC1"
+				(name "CC2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -544,9 +541,9 @@
 				)
 			)
 			(pin input line
-				(at -22.86 33.02 0)
+				(at -22.86 -7.62 0)
 				(length 2.54)
-				(name "BAT_OFF"
+				(name "LED2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -562,7 +559,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -581,7 +578,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 17.78 0)
+				(at -22.86 2.54 0)
 				(length 2.54)
 				(name "SWDIO"
 					(effects
@@ -599,7 +596,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -618,7 +615,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 20.32 0)
+				(at -22.86 5.08 0)
 				(length 2.54)
 				(name "SWCLK"
 					(effects
@@ -636,7 +633,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 33.02 180)
+				(at -22.86 38.1 0)
 				(length 2.54)
 				(name "USB_D+"
 					(effects
@@ -654,7 +651,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 25.4 0)
+				(at -22.86 10.16 0)
 				(length 2.54)
 				(name "~{BOOT0}"
 					(effects
@@ -672,7 +669,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 30.48 180)
+				(at -22.86 35.56 0)
 				(length 2.54)
 				(name "USB_D-"
 					(effects
@@ -690,7 +687,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 27.94 0)
+				(at -22.86 12.7 0)
 				(length 2.54)
 				(name "~{RST}"
 					(effects
@@ -708,7 +705,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -727,7 +724,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -746,7 +743,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 12.7 0)
+				(at 22.86 38.1 180)
 				(length 2.54)
 				(name "D0/UART_RX0"
 					(effects
@@ -764,7 +761,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -15.24 0)
+				(at -22.86 -17.78 0)
 				(length 2.54)
 				(name "D16/A0"
 					(effects
@@ -782,7 +779,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 10.16 0)
+				(at 22.86 35.56 180)
 				(length 2.54)
 				(name "D1/UART_TX0"
 					(effects
@@ -800,7 +797,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -17.78 0)
+				(at -22.86 -20.32 0)
 				(length 2.54)
 				(name "D17/A1"
 					(effects
@@ -818,7 +815,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 5.08 0)
+				(at 22.86 30.48 180)
 				(length 2.54)
 				(name "D2/I2C_SCL0"
 					(effects
@@ -836,7 +833,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -20.32 0)
+				(at -22.86 -22.86 0)
 				(length 2.54)
 				(name "D18/A2"
 					(effects
@@ -854,7 +851,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 2.54 0)
+				(at 22.86 27.94 180)
 				(length 2.54)
 				(name "D3/I2C_SDA0"
 					(effects
@@ -872,7 +869,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -22.86 0)
+				(at -22.86 -25.4 0)
 				(length 2.54)
 				(name "D19/A3"
 					(effects
@@ -890,7 +887,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 -2.54 0)
+				(at 22.86 22.86 180)
 				(length 2.54)
 				(name "D4/SPI_MISO0"
 					(effects
@@ -908,7 +905,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -25.4 0)
+				(at -22.86 -27.94 0)
 				(length 2.54)
 				(name "D20/A4"
 					(effects
@@ -926,7 +923,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -5.08 0)
+				(at 22.86 20.32 180)
 				(length 2.54)
 				(name "D5/SPI_MOSI0"
 					(effects
@@ -944,7 +941,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -27.94 0)
+				(at -22.86 -30.48 0)
 				(length 2.54)
 				(name "D21/A5"
 					(effects
@@ -962,7 +959,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -7.62 0)
+				(at 22.86 17.78 180)
 				(length 2.54)
 				(name "D6/SPI_SCK0"
 					(effects
@@ -980,7 +977,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -10.16 0)
+				(at 22.86 15.24 180)
 				(length 2.54)
 				(name "D7/SPI_~{CS}0"
 					(effects
@@ -998,7 +995,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -33.02 0)
+				(at -22.86 -35.56 0)
 				(length 2.54)
 				(name "D23/A7"
 					(effects
@@ -1016,7 +1013,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -1035,7 +1032,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -1054,7 +1051,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 12.7 180)
+				(at 22.86 10.16 180)
 				(length 2.54)
 				(name "D8/ARGB_DAT"
 					(effects
@@ -1072,7 +1069,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -15.24 180)
+				(at 22.86 -17.78 180)
 				(length 2.54)
 				(name "D24"
 					(effects
@@ -1090,7 +1087,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 10.16 180)
+				(at 22.86 7.62 180)
 				(length 2.54)
 				(name "D9/ARGB_EN"
 					(effects
@@ -1108,7 +1105,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -17.78 180)
+				(at 22.86 -20.32 180)
 				(length 2.54)
 				(name "D25"
 					(effects
@@ -1126,7 +1123,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 5.08 180)
+				(at 22.86 2.54 180)
 				(length 2.54)
 				(name "D10/I2C_SCL1"
 					(effects
@@ -1144,7 +1141,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -20.32 180)
+				(at 22.86 -22.86 180)
 				(length 2.54)
 				(name "D26"
 					(effects
@@ -1162,7 +1159,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 22.86 0 180)
 				(length 2.54)
 				(name "D11/I2C_SDA1"
 					(effects
@@ -1180,7 +1177,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -22.86 180)
+				(at 22.86 -25.4 180)
 				(length 2.54)
 				(name "D27"
 					(effects
@@ -1198,7 +1195,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -25.4 180)
+				(at 22.86 -27.94 180)
 				(length 2.54)
 				(name "D28"
 					(effects
@@ -1216,7 +1213,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 -5.08 180)
+				(at 22.86 -7.62 180)
 				(length 2.54)
 				(name "D13/SPI_MOSI1"
 					(effects
@@ -1234,7 +1231,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -27.94 180)
+				(at 22.86 -30.48 180)
 				(length 2.54)
 				(name "D29"
 					(effects
@@ -1252,7 +1249,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -7.62 180)
+				(at 22.86 -10.16 180)
 				(length 2.54)
 				(name "D14/SPI_SCK1"
 					(effects
@@ -1270,7 +1267,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -30.48 180)
+				(at 22.86 -33.02 180)
 				(length 2.54)
 				(name "D30"
 					(effects
@@ -1288,7 +1285,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -33.02 180)
+				(at 22.86 -35.56 180)
 				(length 2.54)
 				(name "D31"
 					(effects
@@ -1306,7 +1303,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -38.1 90)
+				(at 0 -40.64 90)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
