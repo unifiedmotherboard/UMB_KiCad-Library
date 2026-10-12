@@ -96,9 +96,9 @@
 				)
 			)
 			(pin output line
-				(at 22.86 -5.08 180)
+				(at 22.86 -2.54 180)
 				(length 2.54)
-				(name "D12/SPI_MISO1"
+				(name "D12/I2C_SCL1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -116,7 +116,7 @@
 			(pin bidirectional line
 				(at 22.86 -12.7 180)
 				(length 2.54)
-				(name "D15/SPI_~{CS}1"
+				(name "D15/ARGB_CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -190,7 +190,7 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 43.18 270)
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(name "VBUS_IN"
 					(effects
@@ -226,7 +226,7 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 43.18 270)
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -264,7 +264,7 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 43.18 270)
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -340,7 +340,7 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 43.18 270)
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -359,7 +359,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 43.18 270)
+				(at 2.54 43.18 270)
 				(length 2.54)
 				(name "VDD_OUT"
 					(effects
@@ -377,7 +377,7 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 43.18 270)
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -395,10 +395,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -22.86 17.78 0)
+			(pin input line
+				(at -22.86 38.1 0)
 				(length 2.54)
-				(name "~{SHP_HLD}"
+				(name "VSYS_EN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -414,7 +414,7 @@
 				)
 			)
 			(pin power_out line
-				(at -5.08 43.18 270)
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -471,7 +471,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -2.54 0)
+				(at -22.86 -7.62 0)
 				(length 2.54)
 				(name "LED0"
 					(effects
@@ -488,10 +488,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -22.86 30.48 0)
+			(pin output line
+				(at -22.86 12.7 0)
 				(length 2.54)
-				(name "CC1"
+				(name "~{USR_BTN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -507,7 +507,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -5.08 0)
+				(at -22.86 -10.16 0)
 				(length 2.54)
 				(name "LED1"
 					(effects
@@ -525,9 +525,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 27.94 0)
+				(at -22.86 25.4 0)
 				(length 2.54)
-				(name "CC2"
+				(name "CC1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -543,7 +543,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -7.62 0)
+				(at -22.86 -12.7 0)
 				(length 2.54)
 				(name "LED2"
 					(effects
@@ -560,11 +560,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -40.64 90)
+			(pin bidirectional line
+				(at -22.86 22.86 0)
 				(length 2.54)
-				(hide yes)
-				(name "GND"
+				(name "CC2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -580,7 +579,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 2.54 0)
+				(at -22.86 -2.54 0)
 				(length 2.54)
 				(name "SWDIO"
 					(effects
@@ -617,7 +616,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 5.08 0)
+				(at -22.86 0 0)
 				(length 2.54)
 				(name "SWCLK"
 					(effects
@@ -635,7 +634,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 38.1 0)
+				(at -22.86 33.02 0)
 				(length 2.54)
 				(name "USB_D+"
 					(effects
@@ -653,7 +652,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 10.16 0)
+				(at -22.86 5.08 0)
 				(length 2.54)
 				(name "~{BOOT0}"
 					(effects
@@ -671,7 +670,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 35.56 0)
+				(at -22.86 30.48 0)
 				(length 2.54)
 				(name "USB_D-"
 					(effects
@@ -689,7 +688,7 @@
 				)
 			)
 			(pin output line
-				(at -22.86 12.7 0)
+				(at -22.86 7.62 0)
 				(length 2.54)
 				(name "~{RST}"
 					(effects
@@ -747,7 +746,7 @@
 			(pin output line
 				(at 22.86 38.1 180)
 				(length 2.54)
-				(name "D0/UART_RX0"
+				(name "D0/SPI_MISO0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -783,7 +782,7 @@
 			(pin input line
 				(at 22.86 35.56 180)
 				(length 2.54)
-				(name "D1/UART_TX0"
+				(name "D1/SPI_MOSI0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -817,9 +816,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 30.48 180)
+				(at 22.86 33.02 180)
 				(length 2.54)
-				(name "D2/I2C_SCL0"
+				(name "D2/SPI_SCK0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -853,9 +852,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 27.94 180)
+				(at 22.86 30.48 180)
 				(length 2.54)
-				(name "D3/I2C_SDA0"
+				(name "D3/SPI_~{CS}0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -889,9 +888,9 @@
 				)
 			)
 			(pin output line
-				(at 22.86 22.86 180)
+				(at 22.86 25.4 180)
 				(length 2.54)
-				(name "D4/SPI_MISO0"
+				(name "D4/I2C_SCL0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -925,9 +924,9 @@
 				)
 			)
 			(pin input line
-				(at 22.86 20.32 180)
+				(at 22.86 22.86 180)
 				(length 2.54)
-				(name "D5/SPI_MOSI0"
+				(name "D5/I2C_SDA0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -963,7 +962,7 @@
 			(pin bidirectional line
 				(at 22.86 17.78 180)
 				(length 2.54)
-				(name "D6/SPI_SCK0"
+				(name "D6/UART_TX0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -981,7 +980,7 @@
 			(pin bidirectional line
 				(at 22.86 15.24 180)
 				(length 2.54)
-				(name "D7/SPI_~{CS}0"
+				(name "D7/UART_RX0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1055,7 +1054,7 @@
 			(pin input line
 				(at 22.86 10.16 180)
 				(length 2.54)
-				(name "D8/ARGB_DAT"
+				(name "D8/SPI_MISO1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1091,7 +1090,7 @@
 			(pin input line
 				(at 22.86 7.62 180)
 				(length 2.54)
-				(name "D9/ARGB_EN"
+				(name "D9/SPI_MOSI1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1125,9 +1124,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 22.86 5.08 180)
 				(length 2.54)
-				(name "D10/I2C_SCL1"
+				(name "D10/SPI_SCK1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1161,9 +1160,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 0 180)
+				(at 22.86 2.54 180)
 				(length 2.54)
-				(name "D11/I2C_SDA1"
+				(name "D11/SPI_~{CS}1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1215,9 +1214,9 @@
 				)
 			)
 			(pin input line
-				(at 22.86 -7.62 180)
+				(at 22.86 -5.08 180)
 				(length 2.54)
-				(name "D13/SPI_MOSI1"
+				(name "D13/I2C_SDA1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1253,7 +1252,7 @@
 			(pin bidirectional line
 				(at 22.86 -10.16 180)
 				(length 2.54)
-				(name "D14/SPI_SCK1"
+				(name "D14/ARGB_DAT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1419,10 +1418,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at 22.86 -5.08 180)
+			(pin output line
+				(at 22.86 -2.54 180)
 				(length 2.54)
-				(name "D12/SPI_MISO1"
+				(name "D12/I2C_SCL1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1440,7 +1439,7 @@
 			(pin bidirectional line
 				(at 22.86 -12.7 180)
 				(length 2.54)
-				(name "D15/SPI_~{CS}1"
+				(name "D15/ARGB_CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1513,8 +1512,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 43.18 270)
+			(pin power_out line
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(name "VBUS_IN"
 					(effects
@@ -1531,7 +1530,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 0 43.18 270)
 				(length 2.54)
 				(name "VSYS_OUT"
@@ -1549,8 +1548,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 43.18 270)
+			(pin power_out line
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -1568,7 +1567,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 0 43.18 270)
 				(length 2.54)
 				(hide yes)
@@ -1587,8 +1586,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 43.18 270)
+			(pin power_out line
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -1606,7 +1605,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 0 43.18 270)
 				(length 2.54)
 				(hide yes)
@@ -1663,8 +1662,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 43.18 270)
+			(pin power_out line
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -1683,7 +1682,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 43.18 270)
+				(at 2.54 43.18 270)
 				(length 2.54)
 				(name "VDD_OUT"
 					(effects
@@ -1700,8 +1699,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 43.18 270)
+			(pin power_out line
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -1720,9 +1719,9 @@
 				)
 			)
 			(pin input line
-				(at -22.86 17.78 0)
+				(at -22.86 38.1 0)
 				(length 2.54)
-				(name "~{SHP_HLD}"
+				(name "VSYS_EN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1737,8 +1736,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -5.08 43.18 270)
+			(pin power_out line
+				(at -2.54 43.18 270)
 				(length 2.54)
 				(hide yes)
 				(name "VBUS_IN"
@@ -1794,8 +1793,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -22.86 -2.54 0)
+			(pin input line
+				(at -22.86 -7.62 0)
 				(length 2.54)
 				(name "LED0"
 					(effects
@@ -1812,10 +1811,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -22.86 30.48 0)
+			(pin output line
+				(at -22.86 12.7 0)
 				(length 2.54)
-				(name "CC1"
+				(name "~{USR_BTN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1830,8 +1829,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -22.86 -5.08 0)
+			(pin input line
+				(at -22.86 -10.16 0)
 				(length 2.54)
 				(name "LED1"
 					(effects
@@ -1849,9 +1848,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 27.94 0)
+				(at -22.86 25.4 0)
 				(length 2.54)
-				(name "CC2"
+				(name "CC1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1866,8 +1865,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at -22.86 -7.62 0)
+			(pin input line
+				(at -22.86 -12.7 0)
 				(length 2.54)
 				(name "LED2"
 					(effects
@@ -1877,6 +1876,24 @@
 					)
 				)
 				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -22.86 22.86 0)
+				(length 2.54)
+				(name "CC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1904,7 +1921,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 2.54 0)
+				(at -22.86 -2.54 0)
 				(length 2.54)
 				(name "SWDIO"
 					(effects
@@ -1940,8 +1957,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 5.08 0)
+			(pin output line
+				(at -22.86 0 0)
 				(length 2.54)
 				(name "SWCLK"
 					(effects
@@ -1959,7 +1976,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 38.1 0)
+				(at -22.86 33.02 0)
 				(length 2.54)
 				(name "USB_D+"
 					(effects
@@ -1976,8 +1993,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 10.16 0)
+			(pin output line
+				(at -22.86 5.08 0)
 				(length 2.54)
 				(name "~{BOOT0}"
 					(effects
@@ -1995,7 +2012,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 35.56 0)
+				(at -22.86 30.48 0)
 				(length 2.54)
 				(name "USB_D-"
 					(effects
@@ -2012,8 +2029,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -22.86 12.7 0)
+			(pin output line
+				(at -22.86 7.62 0)
 				(length 2.54)
 				(name "~{RST}"
 					(effects
@@ -2068,10 +2085,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at 22.86 38.1 180)
 				(length 2.54)
-				(name "D0/UART_RX0"
+				(name "D0/SPI_MISO0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2104,10 +2121,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at 22.86 35.56 180)
 				(length 2.54)
-				(name "D1/UART_TX0"
+				(name "D1/SPI_MOSI0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2141,9 +2158,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 30.48 180)
+				(at 22.86 33.02 180)
 				(length 2.54)
-				(name "D2/I2C_SCL0"
+				(name "D2/SPI_SCK0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2177,9 +2194,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 27.94 180)
+				(at 22.86 30.48 180)
 				(length 2.54)
-				(name "D3/I2C_SDA0"
+				(name "D3/SPI_~{CS}0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2212,10 +2229,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at 22.86 22.86 180)
+			(pin output line
+				(at 22.86 25.4 180)
 				(length 2.54)
-				(name "D4/SPI_MISO0"
+				(name "D4/I2C_SCL0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2248,10 +2265,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 22.86 20.32 180)
+			(pin input line
+				(at 22.86 22.86 180)
 				(length 2.54)
-				(name "D5/SPI_MOSI0"
+				(name "D5/I2C_SDA0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2287,7 +2304,7 @@
 			(pin bidirectional line
 				(at 22.86 17.78 180)
 				(length 2.54)
-				(name "D6/SPI_SCK0"
+				(name "D6/UART_TX0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2305,7 +2322,7 @@
 			(pin bidirectional line
 				(at 22.86 15.24 180)
 				(length 2.54)
-				(name "D7/SPI_~{CS}0"
+				(name "D7/UART_RX0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2376,10 +2393,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at 22.86 10.16 180)
 				(length 2.54)
-				(name "D8/ARGB_DAT"
+				(name "D8/SPI_MISO1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2412,10 +2429,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at 22.86 7.62 180)
 				(length 2.54)
-				(name "D9/ARGB_EN"
+				(name "D9/SPI_MOSI1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2449,9 +2466,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 22.86 5.08 180)
 				(length 2.54)
-				(name "D10/I2C_SCL1"
+				(name "D10/SPI_SCK1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2485,9 +2502,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 0 180)
+				(at 22.86 2.54 180)
 				(length 2.54)
-				(name "D11/I2C_SDA1"
+				(name "D11/SPI_~{CS}1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2538,10 +2555,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 22.86 -7.62 180)
+			(pin input line
+				(at 22.86 -5.08 180)
 				(length 2.54)
-				(name "D13/SPI_MOSI1"
+				(name "D13/I2C_SDA1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2577,7 +2594,7 @@
 			(pin bidirectional line
 				(at 22.86 -10.16 180)
 				(length 2.54)
-				(name "D14/SPI_SCK1"
+				(name "D14/ARGB_DAT"
 					(effects
 						(font
 							(size 1.27 1.27)
